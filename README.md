@@ -18,19 +18,20 @@ Main feature of the program : <br/>
 to change, go at application.properties<br/>
 
 # Input & Output ( All Capability )
-<br/>
+
 # User 
 
-1. checklogin (POST method)
-Input
+checklogin (POST method) <br/>
+API request <br/>
 ```java
   http://localhost:8089/user/login
-  
-  with Response Body: 
-  {
+```
+Response Body 
+```java
+{
        "username": "jessifebria",
       "password": "12345"
-  }
+ }
 ```
 Output
 ```java
