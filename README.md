@@ -372,7 +372,7 @@ Output
 
 
 
-# Translate - Get Code (to save in history db) (POST method) 
+# Translate - Get Code (to save in history db) (GET method) 
 API request <br/>
 ```java
   http://localhost:8089/translate/code/Indonesian
