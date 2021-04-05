@@ -53,7 +53,7 @@ public class HistoryController {
     @PostMapping("/history/save")
     public HashMap<String, History> save(@RequestBody HistorySave history) throws ParseException {
         HashMap<String, History> result = new HashMap<>();
-        History realHistory = new History(history.getLanguageIdFrom(), history.getLanguageIdTo(), history.getMessageFrom(), history.getLanguageIdTo(), userService.get(history.getUser()));
+        History realHistory = new History(history.getLanguageIdFrom(), history.getLanguageIdTo(), history.getMessageFrom(), history.getMessageTo(), userService.get(history.getUser()));
         result.put("History", historyService.save(realHistory));
         return result;
     }

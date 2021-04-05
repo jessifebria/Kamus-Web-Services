@@ -44,7 +44,7 @@ public class UserController {
     }
     
     @PostMapping("/user/login")
-    public Status save(@RequestBody UserLogin user) {
+    public Status checklogin(@RequestBody UserLogin user) {
         HashMap<String, User> result = new HashMap<>();
         
         if (userService.checklogin(user)) {

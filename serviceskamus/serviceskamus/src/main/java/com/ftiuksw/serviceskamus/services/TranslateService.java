@@ -214,5 +214,9 @@ public class TranslateService {
     public List<String> listlanguage (){
         return new ArrayList<String>(countrycode.keySet());
     }
+    
+    public String getcode(String language){
+        return countrycode.get(language);
+    }
 
 }

@@ -39,5 +39,12 @@ public class TranslateController {
         result.put("Languages", translateService.listlanguage());
         return result;
     }
+    
+    @GetMapping("/translate/code/{language}")
+    public HashMap<String, String> getcode(@PathVariable String language) {
+        HashMap<String, String> result = new HashMap<>();
+        result.put("Code", translateService.getcode(language));
+        return result;
+    }
 
 }
